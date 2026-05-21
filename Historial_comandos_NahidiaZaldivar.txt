@@ -1,0 +1,98 @@
+whoami
+pwd
+ls -la
+hostnamect1
+hostnamectl
+ls /home/vagrant/carpeta_compartida/
+exit
+whoami
+pwd
+ssh-keygen
+whoami
+ls -la
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
+cd ~/repogit/TP_AySO
+pwd
+cd ~
+mkdir repogit
+cd repogit
+git clone git@github.com:Zaldivar24/TP_AySO.git
+cd TP_AySO
+pwd
+cat /etc/passwd
+man grep
+grep UBUNTU /etc/passwd
+grep ubuntu /etc/passwd
+grep -i Ubuntu /etc/passwd
+sudo grep -i ubuntu /etc/shadow
+sudo grep -i ubuntu /etc/shadow | awk -F':' '{print $2}' > datos_usuario.txt
+whoami
+echo "Usuario=$(whoami)" >> datos_usuario.txt
+cat datos_usuario.txt
+pwd
+git add .
+git config --global user.email "nahi.zaldivar@gmail.com"
+git config --global user.name "Zaldivar24"
+git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+grep "model name" /proc/cpuinfo | head -n1 > info_pc.txt
+cat info_pc.txt
+git add .
+git commit -m "feat: Añadiendo información de CPU"
+git status
+grep -v nologin /etc/passwd | head -n10 | sort -k7 > lista_ordenada.txt
+cat lista_ordenada.txt
+git add .
+git commit -m "ADD: Listado de usuarios ordenada"
+git status
+cat >> README.md << "EOF"
+Alumno: Nahidia Zaldivar Alcantara
+División: 116
+Turno: Mañana
+EOF
+
+cat README.md
+git checkout README.md
+cat >> README.md << "EOF"
+Alumno: Nahidia Zaldivar Alcantara
+División: 116
+Turno: Mañana
+EOF
+
+cat README.md
+git checkout README.md
+cat >> README.md << "EOF"
+
+Alumno: Nahidia Zaldivar Alcantara
+Division: 116
+Turno: Mañana
+EOF
+
+cat README.md}
+cat README.md 
+git add .
+git commit -m "docs: Agregada la información del alumno al README"
+git status
+mkdir -p ~/TP1/{arquitectura/{Clase1,Clase2,Clase3,Clase4,Clase5},so/{Clase1,Clase2,Clase3,Clase4,Clase5,Clase6}}
+cat > script_dir.sh << 'EOF'
+#!bin/bash
+mkdir -p ~/TP1/{arquitectura/{Clase1,Clase2,Clase3,Clase4,Clase5},so/{Clase1,Clase2,Clase3,Clase4,Clase5,Clase6}}
+EOF
+
+rm script_dir.sh
+cat > script_dir.sh << 'EOF'
+#!/bin/bash
+mkdir -p ~/TP1/{arquitectura/{Clase1,Clase2,Clase3,Clase4,Clase5},so/{Clase1,Clase2,Clase3,Clase4,Clase5,Clase6}}
+EOF
+
+chmod +x script_dir.sh
+./script_dir.sh
+tree ~/TP1
+sudo apt update
+sudo apt install tree -y
+tree ~/TP1
+git add .
+git commit -m "ADD: Añadiendo script"
+git status
+history -a
